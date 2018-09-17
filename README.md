@@ -108,7 +108,7 @@ public class LoginController {
     }
 }
 ```
-&emsp;&emsp;后端的 API 现在有了，就差前端调用了。但是没这么简单，接下来就要解决我前面提到的两个问题。
+&emsp;&emsp;后端的 API 现在有了，就差前端调用了。但是没这么简单，接下来就要解决我前面提到的问题。
 # 实现 CORS
 &emsp;&emsp;在这个 Demo 中前端占用的端口是8080，后端是 8088。这就存在跨域的问题，如果不解决的话后端就没法接收前端的请求。
 
@@ -175,7 +175,7 @@ export default {
 至此，终于实现了前后端的分离，并且保证前后端能够顺利交互。
 # 题外话
 ## 让 controller 能获取请求参数
-&emsp;&emsp;controller 可能无法获取请求参数，比如一开始我这里的`LoginController`就无法获取`username`和`password`这两个参数。[这篇文章](https://my.oschina.net/u/3491123/blog/1593600)提供了一种解决方案。我这个 Demo 中并没有出现 controller 收不到请求参数的问题，但也把这个问题记录下来，以后可能遇上也说不准。
+&emsp;&emsp;controller 可能无法获取请求参数，[这篇文章](https://my.oschina.net/u/3491123/blog/1593600)提供了一种解决方案。我这个 Demo 中并没有出现 controller 收不到请求参数的问题，但也把这个问题记录下来，以后可能遇上也说不准。
 ## axios 方法中的 this
 &emsp;&emsp;我这个 Demo 中还试着用 axios 发 GET 请求，然后获取后端响应的 JSON 数据。
 ```html
