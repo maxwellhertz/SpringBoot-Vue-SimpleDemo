@@ -245,5 +245,5 @@ typeError: Cannot set property 'username' of undefined
 ```
 经实践，这样也是可以的。
 
-Demo 完整源码：
+
 
